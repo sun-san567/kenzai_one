@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+#main-page {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #4CAF50;
+    height: 36px;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PJ登録画面 */
+#showFormButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#showFormButton:hover {
+    background-color: #45a049;
+}
+

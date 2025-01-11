@@ -1,0 +1,85 @@
+/* モーダルウィンドウのスタイル設定 */
+
+/* モーダルの背景オーバーレイ */
+.modal-overlay {
+    position: fixed;          /* 画面に固定 */
+    top: 0;                   /* 画面上端から配置 */
+    left: 0;                  /* 画面左端から配置 */
+    width: 100%;             /* 画面幅いっぱいに広げる */
+    height: 100%;            /* 画面の高さいっぱいに広げる */
+    background-color: rgba(0, 0, 0, 0.5);  /* 半透明の黒背景 */
+    display: flex;           /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center;     /* 垂直方向の中央揃え */
+    z-index: 1000;          /* 他の要素より前面に表示 */
+}
+
+/* モーダルの本体部分 */
+.modal-content {
+    background-color: rgb(255, 255, 255);  /* 背景色を白に設定 */
+    padding: 20px;           /* 内側の余白 */
+    border-radius: 5px;      /* 角を丸くする */
+    width: 80%;             /* 幅を親要素の80%に */
+    max-width: 500px;       /* 最大幅を500pxに制限 */
+}
+
+/* フォームの各入力グループ */
+.form-group {
+    margin-bottom: 15px;    /* 下部の余白 */
+}
+
+/* ラベルのスタイル */
+.form-group label {
+    display: block;         /* ブロック要素として表示 */
+    margin-bottom: 5px;     /* 下部の余白 */
+}
+
+/* 入力フィールドのスタイル */
+.form-group input {
+    width: 100%;           /* 幅いっぱいに広げる */
+    padding: 8px;          /* 内側の余白 */
+    border: 1px solid #ddd; /* 境界線 */
+    border-radius: 4px;    /* 角を丸くする */
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn-save, .btn-cancel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-save {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #45a049;
+}
+
+.btn-cancel {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+}
+
+.btn-cancel:hover {
+    background-color: #e9ecef;
+}
+
+/* Font Awesome アイコンのサイズ調整 */
+.fas {
+    font-size: 14px;
+}
